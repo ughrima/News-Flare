@@ -1,7 +1,5 @@
 # News-Flare
 
-Here's a README template for your project:
-
 ---
 
 # News Article Analysis with Satirical Content Generation
