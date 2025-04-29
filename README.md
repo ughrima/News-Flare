@@ -5,7 +5,7 @@ This project is a full pipeline to **extract**, **analyze**, and **present** the
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── main.ipynb               # News scraping, sentiment analysis, keyword extraction, entity & topic modeling
@@ -16,7 +16,7 @@ This project is a full pipeline to **extract**, **analyze**, and **present** the
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 Install the required packages:
 
@@ -28,20 +28,20 @@ python -m spacy download en_core_web_sm
 
 ---
 
-## 🔄 Detailed File Descriptions
+## Detailed File Descriptions
 
 ### 1. `main.ipynb` – **News Gathering & Processing Pipeline**
 
 **Purpose**: Fetches and processes high-quality news articles, then applies various NLP techniques including sentiment analysis, keyword extraction, entity recognition, and topic modeling.
 
-#### ✅ News Fetching
+#### News Fetching
 - Uses **NewsAPI** with a well-defined query and explicit trusted sources.
 - If fewer than 15 articles are returned, fallback expands to include `health` and `sports`.
 
-#### 🧼 Preprocessing & Scraping
+#### Preprocessing & Scraping
 - `BeautifulSoup` and `Selenium` clean full article content, handling dynamic pages.
 
-#### 📊 NLP Pipeline
+#### NLP Pipeline
 - **Sentiment Analysis**: VADER (rule-based) → DistilBERT (transformer) fallback.
 - **Keyword Extraction**: Initially `YAKE`, replaced by `KeyBERT` for contextual relevance.
 - **Summarization**: `Sumy` LSA summarizer.
@@ -57,7 +57,7 @@ A cleaned dataset with text, keywords, sentiment, entities, summaries.
 
 **Purpose**: Automatically assigns each article to a semantic topic based on clustered keywords.
 
-#### 🧠 Method:
+####  Method:
 - Deduplicates similar articles.
 - Extracts and filters keywords.
 - Groups keywords into thematic buckets (e.g., Trade, Politics, Health).
@@ -72,7 +72,7 @@ A CSV with added columns: `Dominant_Topic`, `Topic_Description`.
 
 **Purpose**: Generates humorous versions of each article using `google/flan-t5-base`.
 
-#### ✍️ How It Works
+####  How It Works
 - Prompts are crafted like: `"Make this headline funny: ..."` or `"Write a funny summary about: ..."`
 - Uses sampling to ensure creative output:
   - `max_new_tokens`: 30 (headline), 60 (summary)
@@ -91,7 +91,7 @@ Adds:
 
 **Purpose**: Displays processed articles with satirical content in a visually rich web UI.
 
-#### 💡 Features:
+#### Features:
 - Sidebar filter by topic
 - Color-coded **sentiment labels** with emojis
 - **Keyword chips** with pastel colors
@@ -111,6 +111,6 @@ streamlit run news_flare.py
 
 ---
 
-## 🎯 Project Goal
+## Project Goal
 
 This project **focuses on surfacing globally relevant and important news**, filtering out noise, and making it **engaging and accessible through humor and intelligent summarization**.
