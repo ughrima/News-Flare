@@ -16,8 +16,9 @@ This project is a full pipeline to **extract**, **analyze**, and **present** the
 
 ## Preview
 
-| ![Raw](assets/Image-1.jpeg) | ![Raw](assets/Image-2.jpeg) | 
-|----------|-----------|
+| ![Raw](assets/Image-1.jpeg) | 
+|----------|
+![Raw](assets/Image-2.jpeg) | 
 
 ## Project
 Do checkout the deployed project [link](https://news-flare.streamlit.app/).
