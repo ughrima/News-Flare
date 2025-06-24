@@ -3,7 +3,7 @@
 
 This project is a full pipeline to **extract**, **analyze**, and **present** the **most relevant and important global news**, enriched with satire. It scrapes high-quality articles, processes them using cutting-edge NLP, categorizes and clusters them by topic, and then adds humorous flair—finally displaying everything in a stylish interactive dashboard.
 
----
+
 
 ## Project Structure
 
@@ -15,13 +15,13 @@ This project is a full pipeline to **extract**, **analyze**, and **present** the
 ```
 
 ## Preview
-![Raw](assets/Image-1.jpeg)
-![Raw](assets/Image-2.jpeg)
 
-## Deployed Link 
+| ![Raw](assets/Image-1.jpeg) | ![Raw](assets/Image-2.jpeg) | 
+|----------|-----------|
 
-Do checkout the deployed project - ![Link](https://news-flare.streamlit.app/)
----
+## Project
+Do checkout the deployed project [link](https://news-flare.streamlit.app/).
+
 
 ## Dependencies
 
@@ -33,7 +33,7 @@ python -m nltk.downloader punkt stopwords
 python -m spacy download en_core_web_sm
 ```
 
----
+
 
 ## Detailed File Descriptions
 
@@ -58,7 +58,7 @@ python -m spacy download en_core_web_sm
 **Output**:
 A cleaned dataset with text, keywords, sentiment, entities, summaries.
 
----
+
 
 ### 2. `topic.py` – **Dynamic Topic Categorization**
 
@@ -73,7 +73,6 @@ A cleaned dataset with text, keywords, sentiment, entities, summaries.
 **Output**:
 A CSV with added columns: `Dominant_Topic`, `Topic_Description`.
 
----
 
 ### 3. `satire.ipynb` – **Humor Layer: Satirical Enrichment**
 
@@ -92,7 +91,6 @@ Adds:
 - `Satirical_Headline`
 - `Funny_Short_Summary` columns to the dataset.
 
----
 
 ### 4. `news_flare.py` – **Interactive Streamlit Dashboard**
 
@@ -106,7 +104,6 @@ Adds:
 - Links to full articles
 - Aesthetic **word cloud** visualization
 
----
 
 ## 🚀 To Run
 
