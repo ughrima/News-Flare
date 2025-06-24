@@ -190,7 +190,7 @@ st.markdown(f"### News for: {fixed_date.strftime('%B %d, %Y')}")
 # ——————————————————————————————————————————
 # 2) LOAD & PREPARE DATA
 # ——————————————————————————————————————————
-df = pd.read_csv("/home/agrima/Desktop/curr-projects/News-Flare/news_with_satirical_content.csv")
+df = pd.read_csv("news_with_satirical_content.csv")
 
 def parse_list(x):
     if isinstance(x, str) and x.startswith("["):
