@@ -14,6 +14,13 @@ This project is a full pipeline to **extract**, **analyze**, and **present** the
 ├── news_flare.py            # Streamlit dashboard for visualizing satirical news
 ```
 
+## Preview
+![Raw](assets/Image-1.jpeg)
+![Raw](assets/Image-2.jpeg)
+
+## Deployed Link 
+
+Do checkout the deployed project - ![Link](https://news-flare.streamlit.app/)
 ---
 
 ## Dependencies
